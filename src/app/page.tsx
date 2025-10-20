@@ -53,7 +53,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                Pourquoi choisir Vyrelio plutôt qu'une agence classique ?
+                Pourquoi choisir Vyrelio plutôt qu’une agence classique ?
               </h2>
               <p className="mt-4 text-xl text-gray-600">
                 La différence qui fait toute la différence pour votre croissance
@@ -97,7 +97,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Technologie IA de pointe</h3>
                 <p className="text-gray-600">
-                  Nous intégrons l'intelligence artificielle dans nos solutions pour automatiser la génération de contenu, l'analyse des données patients et l'optimisation des campagnes.
+                  Nous intégrons l’intelligence artificielle dans nos solutions pour automatiser la génération de contenu, l’analyse des données patients et l’optimisation des campagnes.
                 </p>
               </div>
 
@@ -136,7 +136,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Approche centrée patient</h3>
                 <p className="text-gray-600">
-                  Nous concevons chaque élément en pensant d'abord à l'expérience patient, ce qui se traduit par des taux de conversion plus élevés et une meilleure fidélisation.
+                  Nous concevons chaque élément en pensant d’abord à l’expérience patient, ce qui se traduit par des taux de conversion plus élevés et une meilleure fidélisation.
                 </p>
               </div>
             </div>

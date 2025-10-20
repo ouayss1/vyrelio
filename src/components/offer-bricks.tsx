@@ -1,3 +1,4 @@
+import Link from "next/link";
 export function OfferBricks() {
   return (
     <section id="services" className="mx-auto max-w-7xl px-4 py-20">
@@ -6,7 +7,7 @@ export function OfferBricks() {
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900">Nos offres modulaires</h2>
           <p className="mt-3 text-gray-600">3 briques complémentaires pour attirer, convertir et fidéliser. Choisissez à la carte ou en pack.</p>
         </div>
-        <a href="/pricing" className="hidden sm:inline-flex items-center rounded-full border px-5 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">Voir nos prix</a>
+        <Link href="/pricing" className="hidden sm:inline-flex items-center rounded-full border px-5 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">Voir nos prix</Link>
       </div>
 
       <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -27,8 +28,8 @@ export function OfferBricks() {
             <span className="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-emerald-700">RGPD</span>
           </div>
           <div className="mt-6 flex gap-2">
-            <a href="/pricing" className="inline-flex flex-1 items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-white text-sm font-semibold hover:bg-emerald-700">Détails & prix</a>
-            <a href="/#contact" className="inline-flex flex-1 items-center justify-center rounded-full border px-5 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">Parler à un expert</a>
+            <Link href="/pricing" className="inline-flex flex-1 items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-white text-sm font-semibold hover:bg-emerald-700">Détails & prix</Link>
+            <Link href="/#contact" className="inline-flex flex-1 items-center justify-center rounded-full border px-5 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">Parler à un expert</Link>
           </div>
         </div>
 
@@ -84,7 +85,7 @@ export function OfferBricks() {
             <span className="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-emerald-700 font-medium">Pack Croissance • Site + SEO</span>
             <span className="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-emerald-700 font-medium">Pack Full • Site + SEO + Automations</span>
           </div>
-          <a href="/pricing" className="inline-flex items-center rounded-full bg-emerald-600 px-5 py-3 text-white text-sm font-semibold hover:bg-emerald-700">Comparer les packs</a>
+          <Link href="/pricing" className="inline-flex items-center rounded-full bg-emerald-600 px-5 py-3 text-white text-sm font-semibold hover:bg-emerald-700">Comparer les packs</Link>
         </div>
       </div>
     </section>

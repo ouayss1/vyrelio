@@ -1,4 +1,5 @@
 import { StatInsight } from "@/components/stat-insight";
+import Link from "next/link";
 export function Automation() {
 	return (
 		<section className="relative overflow-hidden">
@@ -81,9 +82,9 @@ export function Automation() {
 				</div>
 
 				<div className="mt-10 flex justify-center">
-					<a href="/#contact" className="inline-flex items-center rounded-full bg-emerald-600 px-8 py-4 text-white text-base font-semibold hover:bg-emerald-700">
+					<Link href="/#contact" className="inline-flex items-center rounded-full bg-emerald-600 px-8 py-4 text-white text-base font-semibold hover:bg-emerald-700">
 						Activer les automatisations
-					</a>
+					</Link>
 				</div>
 			</div>
 		</section>

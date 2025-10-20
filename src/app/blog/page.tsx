@@ -47,7 +47,7 @@ export default function BlogIndex() {
           href={CALENDLY_URL}
           className="inline-flex items-center rounded-full bg-emerald-600 px-6 py-3 text-white text-sm font-semibold hover:bg-emerald-700"
         >
-          Demander un plan d'action gratuit
+          Demander un plan d’action gratuit
         </Link>
       </div>
     </section>

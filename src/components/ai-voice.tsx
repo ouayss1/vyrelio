@@ -21,7 +21,7 @@ export function AIVoice({ phone = "+33123456789", phoneLabel = "+33 1 23 45 67 8
                         et répond aux questions fréquentes. Intégration avec votre agenda et CRM.
                     </p>
                     <p className="mt-1 text-xs text-gray-500">Basé sur tests internes Vyrelio (2025).</p>
-                    <p className="mt-1 text-gray-700">Réduisez le temps d'attente moyen de vos patients et augmentez leur satisfaction.</p>
+                    <p className="mt-1 text-gray-700">Réduisez le temps d’attente moyen de vos patients et augmentez leur satisfaction.</p>
                     <ul className="mt-6 space-y-2 text-gray-700">
                         <li>• Transfert vers l’équipe quand nécessaire</li>
                         <li>• Scripts personnalisés par acte (implant, Invisalign, urgences…)</li>

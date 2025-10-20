@@ -2,6 +2,7 @@ import { StatInsight } from "@/components/stat-insight";
 import { Button } from "@/components/ui/button";
 import Script from "next/script";
 import Image from "next/image";
+import Link from "next/link";
 
 export function DiscoveryCall() {
 	return (
@@ -29,7 +30,7 @@ export function DiscoveryCall() {
 					</div>
 					<div className="mt-6">
 						<Button asChild className="rounded-full px-6 py-6 text-base">
-							<a href="/#contact">Réserver mon appel</a>
+							<Link href="/#contact">Réserver mon appel</Link>
 						</Button>
 					</div>
 				</div>

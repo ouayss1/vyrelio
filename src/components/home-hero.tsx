@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { TrafficCard, PatientsCard } from "@/components/hero-cards";
 import { StatInsight } from "@/components/stat-insight";
+import Link from "next/link";
 
 export function HomeHero() {
 	return (
@@ -28,9 +29,9 @@ export function HomeHero() {
 						/>
 					</div>
 					<div className="mt-8 flex flex-wrap gap-3">
-						<a href="/#contact" className="inline-flex items-center rounded-full bg-emerald-600 px-6 py-3 text-white text-sm font-semibold hover:bg-emerald-700">
+						<Link href="/#contact" className="inline-flex items-center rounded-full bg-emerald-600 px-6 py-3 text-white text-sm font-semibold hover:bg-emerald-700">
 							Obtenez votre estimation de croissance
-						</a>
+						</Link>
 						<a href="#cases" className="inline-flex items-center rounded-full border px-6 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">
 							Voir une étude de cas
 						</a>

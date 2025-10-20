@@ -19,7 +19,7 @@ export default function NousRejoindre() {
       await navigator.clipboard.writeText(referralLink);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
-    } catch (e) {
+    } catch {
       setCopied(false);
     }
   };
@@ -143,7 +143,7 @@ export default function NousRejoindre() {
             Rôles ouverts (freelance)
           </h2>
           <p className="mt-2 text-gray-700">
-            Travail 100% à distance, sans engagement d'heures. Rémunération à la
+            Travail 100% à distance, sans engagement d’heures. Rémunération à la
             performance (commission / projet / primes).
           </p>
 
@@ -234,11 +234,11 @@ export default function NousRejoindre() {
             </div>
             <div className="rounded-2xl border bg-white p-6">
               <p className="text-sm text-gray-600">Temps</p>
-              <p className="mt-1 text-gray-900 font-semibold">Pas d'horaires imposés</p>
+              <p className="mt-1 text-gray-900 font-semibold">Pas d’horaires imposés</p>
             </div>
             <div className="rounded-2xl border bg-white p-6">
               <p className="text-sm text-gray-600">Engagement</p>
-              <p className="mt-1 text-gray-900 font-semibold">Pas d'engagement (freelance)</p>
+              <p className="mt-1 text-gray-900 font-semibold">Pas d’engagement (freelance)</p>
             </div>
             <div className="rounded-2xl border bg-white p-6">
               <p className="text-sm text-gray-600">Rémunération</p>
@@ -257,7 +257,7 @@ export default function NousRejoindre() {
                 Prêt à nous recommander ou à collaborer ?
               </h3>
               <p className="mt-2 text-gray-700">
-                On reste simples et efficaces : une intro et on s'occupe du reste.
+                On reste simples et efficaces : une intro et on s’occupe du reste.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">

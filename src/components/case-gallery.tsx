@@ -164,7 +164,7 @@ export function CaseGallery() {
               <div className="space-y-3 text-gray-800">
                 <p><span className="font-semibold">Problème</span> → {active.problem}</p>
                 <div>
-                  <p><span className="font-semibold">Plan d'action vyrelio</span></p>
+                  <p><span className="font-semibold">Plan d&#39;action vyrelio</span></p>
                   <ul className="list-disc pl-5">
                     {active.plan.map((step) => (
                       <li key={step}>{step}</li>

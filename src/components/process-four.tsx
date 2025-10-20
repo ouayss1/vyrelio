@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export function ProcessFour() {
   return (
@@ -135,7 +136,7 @@ export function ProcessFour() {
         </motion.div>
       </div>
       <div className="mt-10 flex justify-center">
-        <a href="/#contact" className="inline-flex items-center rounded-full bg-emerald-600 px-8 py-4 text-white text-base font-semibold hover:bg-emerald-700">Démarrer l’audit</a>
+        <Link href="/#contact" className="inline-flex items-center rounded-full bg-emerald-600 px-8 py-4 text-white text-base font-semibold hover:bg-emerald-700">Démarrer l’audit</Link>
       </div>
     </section>
   );

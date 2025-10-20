@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function OverviewPage() {
   return (
     <div className="space-y-8">
@@ -36,7 +38,7 @@ export default function OverviewPage() {
             <polyline points="20,120 300,120" fill="none" stroke="#D1FAE5" strokeWidth="2" />
             <polyline points="20,120 80,120 140,120 200,120 260,120 300,120" fill="none" stroke="#10B981" strokeWidth="3" />
           </svg>
-          <p className="mt-2 text-sm text-gray-600">Collecte réelle inactive. Les courbes s'activeront après le lancement.</p>
+          <p className="mt-2 text-sm text-gray-600">Collecte réelle inactive. Les courbes s’activeront après le lancement.</p>
         </div>
         <div className="rounded-2xl border bg-white p-6">
           <div className="flex items-center justify-between">
@@ -79,7 +81,7 @@ export default function OverviewPage() {
           <p className="font-semibold text-gray-900">Activez votre tableau de bord avec un site Vyrelio</p>
           <p className="text-sm text-gray-700">Lancement en quelques semaines. Données, avis et automations s’affichent automatiquement.</p>
         </div>
-        <a href="/#discovery" className="inline-flex items-center rounded-full px-5 py-3 text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-700">Démarrer</a>
+        <Link href="/#contact" className="inline-flex items-center rounded-full px-5 py-3 text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-700">Démarrer</Link>
       </div>
     </div>
   );

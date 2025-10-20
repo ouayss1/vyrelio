@@ -96,7 +96,7 @@ export default function BlogPostPage({ params }: { params: Params }) {
 
       <footer className="mt-12 rounded-2xl border border-emerald-100 bg-emerald-50/70 p-5 text-center">
         <p className="text-gray-800">
-          Besoin d'un plan d'action sur-mesure ?
+          Besoin d’un plan d’action sur‑mesure ?
         </p>
         <div className="mt-4 flex justify-center">
           <Link href={CALENDLY_URL} className="inline-flex items-center rounded-full bg-emerald-600 px-6 py-3 text-white text-sm font-semibold hover:bg-emerald-700">
