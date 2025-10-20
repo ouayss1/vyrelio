@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" fill="none">
+	<defs>
+		<linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+			<stop offset="0" stop-color="#E8F5EE"/>
+			<stop offset="1" stop-color="#F6FAFF"/>
+		</linearGradient>
+	</defs>
+	<rect width="1280" height="720" rx="24" fill="url(#g2)"/>
+	<rect x="120" y="120" width="520" height="320" rx="16" fill="#fff" stroke="#E5E7EB"/>
+	<rect x="680" y="120" width="480" height="320" rx="16" fill="#fff" stroke="#E5E7EB"/>
+	<rect x="120" y="480" width="1040" height="120" rx="16" fill="#fff" stroke="#E5E7EB"/>
+	<text x="140" y="520" font-family="sans-serif" font-size="24" fill="#6B7280">Case study placeholder</text>
+</svg>
+
