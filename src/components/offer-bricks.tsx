@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 export function OfferBricks() {
   return (
     <section id="services" className="mx-auto max-w-7xl px-4 py-20">
@@ -91,4 +92,3 @@ export function OfferBricks() {
     </section>
   );
 }
-

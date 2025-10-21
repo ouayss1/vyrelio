@@ -5,7 +5,7 @@ import Script from "next/script";
 
 type Props = { url?: string; height?: number };
 
-export function CalendlySection({ url = "https://calendly.com/zdf6300/30min?hide_event_type_details=1&hide_gdpr_banner=1&text_color=000000&primary_color=00bc7c", height = 560 }: Props) {
+export function CalendlySection({ url = "https://calendly.com/zdf6300/30min?hide_event_type_details=1&hide_gdpr_banner=1&text_color=000000&primary_color=2ECA97", height = 560 }: Props) {
   const [computedHeight, setComputedHeight] = useState<number>(height);
 
   // Compute a responsive height to avoid internal iframe scrollbars

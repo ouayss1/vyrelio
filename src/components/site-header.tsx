@@ -10,10 +10,9 @@ import { CALENDLY_URL } from "@/lib/utils";
 export function SiteHeader() {
 	return (
 		<header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-			<div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+			<div className="mx-auto max-w-7xl px-4 py-2 flex items-center justify-between">
 				<Link href="/" className="flex items-center font-semibold">
-					<Image src="/vyrelio-logo.svg" alt="Vyrelio" width={140} height={140} priority className="h-12 w-auto md:h-12 lg:h-10" />
-					<span className="hidden md:inline text-lg text-gray-900 whitespace-nowrap">yrelio</span>
+					<Image src="/vyrelio-logo.svg" alt="Vyrelio" width={40} height={40} priority className="h-14 w-auto md:h-14 lg:h-14" />
 					<span className="sr-only">Aller à l’accueil</span>
 				</Link>
 

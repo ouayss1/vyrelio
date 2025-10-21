@@ -45,24 +45,24 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: #FFFFFF;
+  --foreground: #1E1E1E;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: #059669;
+  --primary: var(--brand-primary);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
+  --secondary: var(--brand-secondary);
+  --secondary-foreground: #1E1E1E;
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --accent: var(--brand-accent);
+  --accent-foreground: #0A2640;
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: #34d399;
+  --ring: var(--brand-accent);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -70,12 +70,12 @@
   --chart-5: oklch(0.769 0.188 70.08);
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: #059669;
+  --sidebar-primary: var(--brand-primary);
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: #34d399;
+  --sidebar-ring: var(--brand-accent);
 }
 
 .dark {
@@ -85,7 +85,7 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: #10b981;
+  --primary: var(--brand-primary);
   --primary-foreground: oklch(0.205 0 0);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
@@ -96,7 +96,7 @@
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: #34d399;
+  --ring: var(--brand-primary);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -104,12 +104,12 @@
   --chart-5: oklch(0.645 0.246 16.439);
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: #10b981;
+  --sidebar-primary: var(--brand-primary);
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: #34d399;
+  --sidebar-ring: var(--brand-primary);
 }
 
 @layer base {
@@ -119,4 +119,70 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Brand theming: edit these three variables to test palettes */
+:root {
+  --brand-primary: #101d3a; /* Primary */
+  --brand-secondary: #dfffee; /* Secondary */
+  --brand-accent: #0d0b4d; /* Accent */
+
+  /* Derived shades for convenience */
+  --brand-50: color-mix(in oklch, var(--brand-primary) 6%, white);
+  --brand-100: color-mix(in oklch, var(--brand-primary) 12%, white);
+  --brand-300: color-mix(in oklch, var(--brand-primary) 35%, white);
+  --brand-500: color-mix(in oklch, var(--brand-primary) 100%, white);
+  --brand-600: color-mix(in oklch, var(--brand-primary) 92%, black);
+  --brand-700: color-mix(in oklch, var(--brand-primary) 82%, black);
+  --brand-shadow: color-mix(in oklch, var(--brand-accent) 35%, transparent);
+}
+
+@layer utilities {
+  /* Primary brand utilities */
+  .bg-brand { background-color: var(--brand-primary) !important; }
+  .text-brand { color: var(--brand-primary) !important; }
+  .border-brand { border-color: var(--brand-primary) !important; }
+  .ring-brand { --tw-ring-color: var(--brand-primary) !important; }
+
+  .bg-brand-50 { background-color: var(--brand-50) !important; }
+  .bg-brand-100 { background-color: var(--brand-100) !important; }
+  .border-brand-100 { border-color: var(--brand-100) !important; }
+  .text-brand-700 { color: var(--brand-700) !important; }
+
+  .hover\:bg-brand-700:hover { background-color: var(--brand-700) !important; }
+
+  /* Opacity variants used in code */
+  .bg-brand-50\/60 { background-color: color-mix(in oklch, var(--brand-50) 60%, transparent) !important; }
+  .bg-brand-600\/10 { background-color: color-mix(in oklch, var(--brand-600) 10%, transparent) !important; }
+
+  /* Map common emerald utilities to brand (quick theme swap without refactoring) */
+  .bg-emerald-600 { background-color: var(--brand-primary) !important; }
+  .hover\:bg-emerald-700:hover { background-color: var(--brand-700) !important; }
+  .text-emerald-700 { color: var(--brand-accent) !important; }
+  .text-emerald-800 { color: var(--brand-accent) !important; }
+  .text-emerald-600 { color: var(--brand-accent) !important; }
+  .text-emerald-500 { color: var(--brand-accent) !important; }
+  .text-emerald-400 { color: var(--brand-accent) !important; }
+  .bg-emerald-100 { background-color: var(--secondary) !important; }
+  .bg-emerald-50 { background-color: var(--secondary) !important; }
+  .bg-emerald-50\/60 { background-color: color-mix(in oklch, var(--secondary) 60%, transparent) !important; }
+  .bg-emerald-50\/70 { background-color: color-mix(in oklch, var(--secondary) 70%, transparent) !important; }
+  .bg-emerald-600\/10 { background-color: color-mix(in oklch, var(--brand-600) 10%, transparent) !important; }
+  .bg-emerald-600\/20 { background-color: color-mix(in oklch, var(--brand-600) 20%, transparent) !important; }
+  .bg-emerald-400\/80 { background-color: color-mix(in oklch, var(--brand-300) 80%, transparent) !important; }
+  .border-emerald-100 { border-color: var(--secondary) !important; }
+  .border-emerald-300 { border-color: color-mix(in oklch, var(--secondary) 80%, black) !important; }
+  .ring-emerald-500 { --tw-ring-color: var(--brand-accent) !important; }
+  .ring-emerald-500\/70 { --tw-ring-color: color-mix(in oklch, var(--brand-accent) 70%, transparent) !important; }
+  .ring-emerald-600 { --tw-ring-color: var(--brand-accent) !important; }
+  .hover\:text-emerald-800:hover { color: var(--brand-700) !important; }
+  .hover\:text-emerald-700:hover { color: var(--brand-700) !important; }
+  .hover\:border-emerald-300:hover { border-color: var(--brand-300) !important; }
+  .hover\:ring-emerald-500:hover { --tw-ring-color: var(--brand-accent) !important; }
+}
+
+/* Override inline emerald strokes/fills in SVG icons to brand accent */
+@layer base {
+  svg [stroke="#059669"], [stroke="#10b981"], [stroke="#34d399"] { stroke: var(--brand-accent) !important; }
+  svg [fill="#059669"], [fill="#10b981"], [fill="#34d399"] { fill: var(--brand-accent) !important; }
 }
