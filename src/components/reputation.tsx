@@ -20,13 +20,8 @@ export function Reputation() {
 						<li>• Dashboard des notes et mots‑clés</li>
 					</ul>
 				</div>
-				<div className="rounded-3xl border p-6 bg-white">
-					<div className="flex items-center gap-2">
-						<Image src="/google.svg" alt="Google" width={28} height={28} />
-						<p className="text-2xl font-extrabold text-emerald-700">4.9 / 5</p>
-					</div>
-					<div className="mt-3 flex gap-1 text-amber-400 text-2xl">★★★★★</div>
-					<p className="mt-2 text-sm text-gray-600">Basé sur 320 avis vérifiés</p>
+				<div>
+					<Image src="/avisgoogle.svg" alt="AvisGoogle" width={800} height={600} className="object-cover w-full h-auto" />
 				</div>
 			</div>
 		</section>
