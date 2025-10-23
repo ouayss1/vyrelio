@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/blog",
     "/pricing",
-    "/etudes-de-cas",
+    "/nous-rejoindre",
   ].map((path) => ({ url: `${base}${path}`, lastModified: new Date() }));
 
   const blogRoutes: MetadataRoute.Sitemap = getAllPosts().map((p) => ({

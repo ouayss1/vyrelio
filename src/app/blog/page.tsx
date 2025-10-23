@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Blog | Vyrelio",
   description:
     "Guides concrets pour cabinets dentaires: SEO local, Google Maps, avis, pages services, conversions et automations.",
+  alternates: { canonical: "/blog" },
   openGraph: {
     title: "Blog | Vyrelio",
     description:
