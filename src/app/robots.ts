@@ -5,6 +5,6 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       { userAgent: "*", allow: "/", disallow: ["/dashboard", "/dashboard/", "/dashboard/*"] },
     ],
-    sitemap: "https://vyrelio.fr/sitemap.xml",
+    sitemap: "https://www.vyrelio.fr/sitemap.xml",
   };
 }

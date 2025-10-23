@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description:
       "Tarifs Vyrelio: site performant, SEO local, automatisations et acquisition patients pour cabinets dentaires.",
     type: "website",
-    url: "https://vyrelio.fr/pricing",
+    url: "https://www.vyrelio.fr/pricing",
   },
 };
 export default function PricingPage() {

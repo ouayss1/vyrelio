@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vyrelio.fr"),
+  metadataBase: new URL("https://www.vyrelio.fr"),
   title: {
     default: "Vyrelio - Agence marketing dentaire",
     template: "%s | Vyrelio",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://vyrelio.fr/",
+    url: "https://www.vyrelio.fr/",
     siteName: "Vyrelio",
     title: "Vyrelio - Agence marketing dentaire",
     description: "Agence spécialisée en acquisition de patients pour dentistes.",

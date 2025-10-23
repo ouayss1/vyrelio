@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description:
       "Agence Vyrelio: acquisition de patients pour dentistes (SEO local, site, prise de RDV, automatisations).",
     type: "website",
-    url: "https://vyrelio.fr/",
+    url: "https://www.vyrelio.fr/",
   },
 };
 

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
       "Freelance, partenaires et parrainage Vyrelio. Contribuez à l’acquisition de patients pour cabinets dentaires.",
     type: "website",
-    url: "https://vyrelio.fr/nous-rejoindre",
+    url: "https://www.vyrelio.fr/nous-rejoindre",
   },
 };
 
