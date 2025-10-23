@@ -16,9 +16,39 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vyrelio — Digitalisation des cabinets dentaires",
-  description:
-    "Agence Vyrelio: sites web, prise de rendez-vous, automatisations et croissance pour cabinets dentaires en France.",
+  metadataBase: new URL("https://vyrelio.fr"),
+  title: {
+    default: "Vyrelio - Agence marketing dentaire",
+    template: "%s | Vyrelio",
+  },
+  description: "Agence spécialisée en acquisition de patients pour dentistes.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://vyrelio.fr/",
+    siteName: "Vyrelio",
+    title: "Vyrelio - Agence marketing dentaire",
+    description: "Agence spécialisée en acquisition de patients pour dentistes.",
+    locale: "fr_FR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vyrelio - Agence marketing dentaire",
+    description: "Agence spécialisée en acquisition de patients pour dentistes.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({

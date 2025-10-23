@@ -184,7 +184,7 @@ export function CaseGallery() {
             </div>
           </div>
           <div className="relative rounded-2xl overflow-hidden border">
-            <Image src={active.thumb} alt={active.title} width={1280} height={720} className="w-full h-auto object-cover" />
+            <Image src={active.thumb} alt={active.title} width={1280} height={720} className="w-full h-auto object-cover" sizes="(min-width: 768px) 60vw, 100vw" />
 
             {/* Badges de métriques dynamiques */}
             <div className="absolute left-4 top-4 flex flex-col gap-2">
@@ -245,7 +245,7 @@ export function CaseGallery() {
                 onClick={() => setActive(c)}
                 className={`text-left rounded-xl border overflow-hidden hover:ring-2 hover:ring-emerald-500 transition-transform duration-200 hover:-translate-y-1 hover:shadow ${active?.id === c.id ? "ring-2 ring-emerald-600" : ""} min-w-[300px] md:min-w-[360px] w-[300px] md:w-[360px] flex-shrink-0 snap-start`}
               >
-                <Image src={c.thumb} alt={c.title} width={640} height={360} className="w-full h-auto object-cover" />
+                <Image src={c.thumb} alt={c.title} width={640} height={360} className="w-full h-auto object-cover" sizes="(min-width: 768px) 360px, 300px" />
                 <div className="p-4">
                   <p className="font-medium text-gray-900">{c.title}</p>
                   <p className="text-sm text-gray-600">{c.metrics.join(" • ")}</p>

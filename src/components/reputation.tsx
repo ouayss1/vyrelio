@@ -21,7 +21,7 @@ export function Reputation() {
 					</ul>
 				</div>
 				<div>
-					<Image src="/avisgoogle.svg" alt="AvisGoogle" width={800} height={600} className="object-cover w-full h-auto" />
+					<Image src="/avisgoogle.svg" alt="AvisGoogle" width={800} height={600} className="object-cover w-full h-auto" sizes="(min-width: 768px) 50vw, 100vw" />
 				</div>
 			</div>
 		</section>

@@ -46,18 +46,6 @@ export function DiscoveryCall() {
         </div>
       </div>
 
-      <div className="mt-16 rounded-3xl border bg-white/70 backdrop-blur px-6 py-8 shadow-sm">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-lg text-gray-800">
-            Intégrez votre <span className="font-semibold text-emerald-700">base patients</span>
-          </p>
-          <div className="flex items-center gap-8 opacity-80">
-            <Image src="/logo-dentrix.svg" alt="Dentrix" width={120} height={32} />
-            <Image src="/logo-eaglesoft.svg" alt="Eaglesoft" width={120} height={32} />
-            <Image src="/logo-opendental.svg" alt="OpenDental" width={140} height={32} />
-          </div>
-        </div>
-      </div>
     </section>
   );
 }

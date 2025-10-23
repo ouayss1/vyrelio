@@ -1,4 +1,19 @@
+import type { Metadata } from "next";
 import { CALENDLY_URL } from "@/lib/utils";
+
+export const metadata: Metadata = {
+  title: "Tarifs | Agence marketing dentaire",
+  description:
+    "Tarifs Vyrelio: site performant, SEO local, automatisations et acquisition patients pour cabinets dentaires.",
+  alternates: { canonical: "/pricing" },
+  openGraph: {
+    title: "Tarifs | Agence marketing dentaire",
+    description:
+      "Tarifs Vyrelio: site performant, SEO local, automatisations et acquisition patients pour cabinets dentaires.",
+    type: "website",
+    url: "https://vyrelio.fr/pricing",
+  },
+};
 export default function PricingPage() {
 	return (
 		<div className="min-h-screen">

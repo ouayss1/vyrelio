@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { TrafficCard, PatientsCard } from "@/components/hero-cards";
 import { StatInsight } from "@/components/stat-insight";
 import Link from "next/link";
+import heroIllustration from "../../public/hero-illustration.avif";
 
 export function HomeHero() {
 	return (
@@ -13,11 +14,11 @@ export function HomeHero() {
 			<div className="mx-auto max-w-7xl px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
 				<div>
 					<h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900">
-						+8 à 12 nouveaux patients/mois sans pub.
+						Agence marketing dentaire: +8 à 12 nouveaux patients/mois
 					</h1>
 					<p className="mt-2 text-sm text-gray-500">Données estimées sur les cabinets dentaires étudié (2024)</p>
 					<p className="mt-5 text-lg text-gray-600 max-w-[52ch]">
-						Site haut de gamme + SEO local + prise de RDV en ligne + rappels automatiques.
+						Acquisition de patients pour cabinets dentaires: site performant, SEO local, prise de RDV en ligne et automatisations.
 					</p>
 					<div className="mt-4 max-w-xl">
 						<StatInsight
@@ -50,7 +51,7 @@ export function HomeHero() {
 				</div>
 				<div className="relative">
 					<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} >
-						<Image src="/hero-illustration.avif" alt="Illustration Vyrelio" width={800} height={600} className="rounded-xl object-cover w-full h-auto" />
+						<Image src={heroIllustration} alt="Illustration Vyrelio" width={800} height={600} className="rounded-xl object-cover w-full h-auto" priority placeholder="blur" sizes="(min-width: 768px) 50vw, 100vw" />
 						<div className="absolute left-3 top-3">
 							<TrafficCard />
 						</div>
