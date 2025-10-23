@@ -27,7 +27,7 @@ const CASES: CaseItem[] = [
     title: "Courtine",
     segment: "startup",
     metrics: ["12 nouveaux patients/mois", "28€ CPL", "2x collections"],
-    thumb: "/edc-courtine.png",
+    thumb: "/edc-courtine.webp",
     problem:
       "Agenda irrégulier, appels saturés, manque de visibilité locale et d’avis Google.",
     plan: [
@@ -48,7 +48,7 @@ const CASES: CaseItem[] = [
     title: "Glow Dent",
     segment: "established",
     metrics: ["+68% trafic", "+34% RDV"],
-    thumb: "/edc-glowdent.png",
+    thumb: "/edc-glowdent.webp",
     problem:
       "Trafic organique en stagnation, pages actes peu visibles localement, conversions mal suivies.",
     plan: [
@@ -68,7 +68,7 @@ const CASES: CaseItem[] = [
     title: "Dentora",
     segment: "dso",
     metrics: ["+210 avis", "4.9/5"],
-    thumb: "/edc-dentora.png",
+    thumb: "/edc-dentora.webp",
     problem:
       "Peu d’avis récents et disparités entre cliniques, freinant la confiance.",
     plan: [
@@ -88,7 +88,7 @@ const CASES: CaseItem[] = [
     title: "Éclat dentaire",
     segment: "established",
     metrics: ["24 sites", "0.8s LCP"],
-    thumb: "/edc-ed.png",
+    thumb: "/edc-ed.webp",
     problem:
       "Réseau de 24 sites hétérogènes, coûts de maintenance élevés et performance insuffisante.",
     plan: [
