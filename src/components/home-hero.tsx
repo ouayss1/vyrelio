@@ -14,7 +14,7 @@ export function HomeHero() {
 			<div className="mx-auto max-w-7xl px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
 				<div>
 					<h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900">
-						Agence marketing dentaire: +8 à 12 nouveaux patients/mois
+						Agence web dentaire: +8 à 12 nouveaux patients/mois
 					</h1>
 					<p className="mt-2 text-sm text-gray-500">Données estimées sur les cabinets dentaires étudié (2024)</p>
 					<p className="mt-5 text-lg text-gray-600 max-w-[52ch]">

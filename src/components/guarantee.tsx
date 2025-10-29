@@ -5,7 +5,7 @@ import { CALENDLY_URL } from "@/lib/utils";
 
 export function Guarantee() {
   return (
-    <section className="relative overflow-hidden">
+    <section id="Guarantee" className="relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-emerald-50 via-white to-white" />
       <div className="relative mx-auto max-w-7xl px-4 py-20">
         <div className="text-center max-w-3xl mx-auto">

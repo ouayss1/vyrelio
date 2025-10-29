@@ -26,8 +26,8 @@ export function Proofs() {
             <a href="#discovery" className="inline-flex items-center rounded-full px-5 py-3 text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-700">Parler à un expert</a>
           </div>
         </div>
-        <div className="rounded-2xl border bg-white p-6">
-          <div className="grid gap-4 sm:grid-cols-3">
+        <div>
+          <div className="grid grid-cols-3 gap-4">
             {[{t:"RGPD",s:"Conforme"},{t:"Hébergement",s:"France / UE"},{t:"Sécurité",s:"HTTPS / SSL"},{t:"Propriété",s:"Vous gardez tout"},{t:"Engagement",s:"Sans durée"}].map(b => (
               <div key={b.t} className="rounded-xl border p-4 text-center">
                 <div className="mx-auto mb-2 h-10 w-10 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center">

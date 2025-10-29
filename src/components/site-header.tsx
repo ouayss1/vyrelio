@@ -21,42 +21,42 @@ export function SiteHeader() {
 						<NavigationMenuList>
 							<NavigationMenuItem>
 								<Link href="/#services" legacyBehavior passHref>
-									<NavigationMenuLink className="px-3 py-2 text-sm text-gray-700 hover:text-gray-900">
+									<NavigationMenuLink className="px-3 py-2 text-sm text-gray-700 hover:text-white">
 										Services
 									</NavigationMenuLink>
 								</Link>
 							</NavigationMenuItem>
 							<NavigationMenuItem>
 								<Link href="/#cases" legacyBehavior passHref>
-									<NavigationMenuLink className="px-3 py-2 text-sm text-gray-700 hover:text-gray-900">
+									<NavigationMenuLink className="px-3 py-2 text-sm text-gray-700 hover:text-white">
 										Études de cas
 									</NavigationMenuLink>
 								</Link>
 							</NavigationMenuItem>
 							<NavigationMenuItem>
 								<Link href="/blog" legacyBehavior passHref>
-									<NavigationMenuLink className="px-3 py-2 text-sm text-gray-700 hover:text-gray-900">
+									<NavigationMenuLink className="px-3 py-2 text-sm text-gray-700 hover:text-white">
 										Blog
 									</NavigationMenuLink>
 								</Link>
 							</NavigationMenuItem>
 							<NavigationMenuItem>
 								<Link href="/pricing" legacyBehavior passHref>
-									<NavigationMenuLink className="px-3 py-2 text-sm text-gray-700 hover:text-gray-900">
+									<NavigationMenuLink className="px-3 py-2 text-sm text-gray-700 hover:text-white">
 										Nos prix
 									</NavigationMenuLink>
 								</Link>
 							</NavigationMenuItem>
 							<NavigationMenuItem>
 								<Link href="/nous-rejoindre" legacyBehavior passHref>
-									<NavigationMenuLink className="px-3 py-2 text-sm text-gray-700 hover:text-gray-900">
+									<NavigationMenuLink className="px-3 py-2 text-sm text-gray-700 hover:text-white">
 										Nous rejoindre
 									</NavigationMenuLink>
 								</Link>
 							</NavigationMenuItem>
 							<NavigationMenuItem>
 								<Link href="/#apropos" legacyBehavior passHref>
-									<NavigationMenuLink className="px-3 py-2 text-sm text-gray-700 hover:text-gray-900">
+									<NavigationMenuLink className="px-3 py-2 text-sm text-gray-700 hover:text-white">
 										À propos
 									</NavigationMenuLink>
 								</Link>
@@ -70,7 +70,7 @@ export function SiteHeader() {
 						<User className="size-5" />
 					</Link>
 					<Button asChild>
-						<Link href={CALENDLY_URL}>Demander une démo</Link>
+						<Link href="/#contact">Demander une démo</Link>
 					</Button>
 				</div>
 			</div>

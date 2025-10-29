@@ -40,7 +40,7 @@ const CASES: CaseItem[] = [
       "Agenda rempli progressivement, flux d’appels mieux réparti et no‑show en baisse.",
     chiffres: ["-30%"],
     chiffres2: ["+40%"],
-    chiffres3: ["Top 3 google"],
+    chiffres3: ["Top 3"],
 
   },
   {
@@ -119,7 +119,7 @@ export function CaseGallery() {
       </div>
 
       <div className="mt-6 flex items-center justify-between">
-        <div className="flex gap-2 rounded-full bg-emerald-50 p-1">
+        <div className="flex gap-1 rounded-full bg-emerald-50 p-1">
           {([
             ["startup", "Nouveau cabinet"],
             ["established", "Établi"],
@@ -128,7 +128,7 @@ export function CaseGallery() {
             <button
               key={key}
               onClick={() => { setTab(key); const first = CASES.find(c => c.segment === key); setActive(first || null); }}
-              className={`px-4 py-2 rounded-full text-sm font-medium ${
+              className={`px-2 py-2 rounded-full text-sm font-medium ${
                 tab === key ? "bg-white text-emerald-700 shadow" : "text-gray-700"
               }`}
             >
@@ -173,10 +173,10 @@ export function CaseGallery() {
                 </div>
                 <p><span className="font-semibold">Résultat</span> → {active.result}</p>
               </div>
-              <div className="mt-4 flex flex-wrap gap-4">
-                <div className="rounded-xl border bg-white px-4 py-3"><p className="text-2xl font-extrabold text-emerald-700">{active.chiffres}</p><p className="text-xs text-gray-600">no‑show</p></div>
-                <div className="rounded-xl border bg-white px-4 py-3"><p className="text-2xl font-extrabold text-emerald-700">{active.chiffres2}</p><p className="text-xs text-gray-600">appels qualifiés</p></div>
-                <div className="rounded-xl border bg-white px-4 py-3"><p className="text-2xl font-extrabold text-emerald-700">{active.chiffres3}</p><p className="text-xs text-gray-600">patients Maps</p></div>
+              <div className="mt-4 flex gap-2">
+                <div className="rounded-xl border bg-white px-4 py-1"><p className="text-2xl font-extrabold text-emerald-700">{active.chiffres}</p><p className="text-xs text-gray-600">no‑show</p></div>
+                <div className="rounded-xl border bg-white px-4 py-1"><p className="text-2xl font-extrabold text-emerald-700">{active.chiffres2}</p><p className="text-xs text-gray-600">appels qualifiés</p></div>
+                <div className="rounded-xl border bg-white px-4 py-1"><p className="text-2xl font-extrabold text-emerald-700">{active.chiffres3}</p><p className="text-xs text-gray-600">patients Maps</p></div>
               </div>
               <div className="mt-4">
                 <a href="#cases" className="inline-flex items-center rounded-full border px-6 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">Avoir mon site vyrelio</a>

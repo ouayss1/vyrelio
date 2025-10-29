@@ -9,6 +9,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog",
     "/pricing",
     "/nous-rejoindre",
+    "/mentions-legales",
+    "/politique-de-confidentialite",
+    "/politique-de-cookies",
   ].map((path) => ({ url: `${base}${path}`, lastModified: new Date() }));
 
   const blogRoutes: MetadataRoute.Sitemap = getAllPosts().map((p) => ({

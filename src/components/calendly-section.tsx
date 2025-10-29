@@ -2,11 +2,14 @@
 
 import { useEffect, useState } from "react";
 import Script from "next/script";
+import { Button } from "@/components/ui/button";
+import { hasMarketingConsent, onConsentChange, writeConsent } from "@/lib/consent";
 
 type Props = { url?: string; height?: number };
 
 export function CalendlySection({ url = "https://calendly.com/zdf6300/30min?hide_event_type_details=1&hide_gdpr_banner=1&text_color=000000&primary_color=2ECA97", height = 560 }: Props) {
   const [computedHeight, setComputedHeight] = useState<number>(height);
+  const [allowed, setAllowed] = useState<boolean>(false);
 
   // Compute a responsive height to avoid internal iframe scrollbars
   useEffect(() => {
@@ -27,6 +30,13 @@ export function CalendlySection({ url = "https://calendly.com/zdf6300/30min?hide
     window.addEventListener("resize", apply);
     return () => window.removeEventListener("resize", apply);
   }, [height]);
+
+  // Consent state
+  useEffect(() => {
+    setAllowed(hasMarketingConsent());
+    const off = onConsentChange((c) => setAllowed(!!c.marketing));
+    return off;
+  }, []);
 
 	return (
 		<section className="relative mx-auto max-w-7xl px-4 py-20">
@@ -55,13 +65,28 @@ export function CalendlySection({ url = "https://calendly.com/zdf6300/30min?hide
 						<path d="M600 95 L 584 114" stroke="currentColor" strokeWidth="9" strokeLinecap="round" strokeLinejoin="round"/>
 					</svg>
 				</div>
-				<div className="rounded-3xl overflow-hidden shadow-sm">
-					<div
-						className="calendly-inline-widget"
-						data-url={url}
-						style={{ minWidth: 320, width: "100%", height: computedHeight }}
-					/>
-					<Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
+				<div className="rounded-3xl overflow-hidden shadow-sm border bg-white">
+					{allowed ? (
+						<>
+							<div
+								className="calendly-inline-widget"
+								data-url={url}
+								style={{ minWidth: 320, width: "100%", height: computedHeight }}
+							/>
+							<Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
+						</>
+					) : (
+						<div style={{ minWidth: 320, width: "100%", height: computedHeight }} className="flex items-center justify-center p-6">
+							<div className="text-center max-w-sm">
+								<p className="font-semibold text-gray-900">Calendrier indisponible sans cookies marketing</p>
+								<p className="mt-2 text-sm text-gray-600">Pour afficher le widget Calendly intégré, merci d'accepter les cookies marketing ou ouvrez Calendly dans un nouvel onglet.</p>
+								<div className="mt-4 flex items-center justify-center gap-2">
+									<Button onClick={() => writeConsent(true)}>Accepter et afficher</Button>
+									<a className="text-sm text-emerald-700 underline" href={url} target="_blank" rel="noreferrer">Ouvrir Calendly</a>
+								</div>
+							</div>
+						</div>
+					)}
 				</div>
 			</div>
 		</section>

@@ -12,6 +12,7 @@ import { Reputation } from "@/components/reputation";
 import { Automation } from "@/components/automation";
 import { CaseGallery } from "@/components/case-gallery";
 import { Differentiation } from "@/components/differentiation";
+import { TechMethod } from "@/components/tech-method";
 
 export const metadata: Metadata = {
   title: "Agence marketing dentaire | Acquisition patients cabinet dentaire",
@@ -42,6 +43,7 @@ export default function Home() {
         <ThreeSteps />
         <Guarantee />
         <DiscoveryCall />
+        <TechMethod />
         <Differentiation />
 
         <Faq />
@@ -49,3 +51,4 @@ export default function Home() {
     </div>
   );
 }
+

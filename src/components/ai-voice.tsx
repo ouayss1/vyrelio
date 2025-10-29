@@ -75,15 +75,9 @@ export function AIVoice({ phone = "+33123456789", phoneLabel = "+33 1 23 45 67 8
                                     <a href={`tel:${phone}`} className="col-span-3 inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-black font-semibold hover:bg-emerald-400">
                                         Appeler maintenant
                                     </a>
-                                    <button className="rounded-full bg-white/10 px-4 py-3 text-sm">Clavier</button>
-                                    <button className="rounded-full bg-white/10 px-4 py-3 text-sm">Silence</button>
-                                    <button className="rounded-full bg-white/10 px-4 py-3 text-sm">Transférer</button>
                                 </div>
                             </div>
                         </div>
-                        {/* Side buttons */}
-                        <div className="absolute left-0 top-24 h-10 w-[3px] rounded-r bg-white/20" />
-                        <div className="absolute right-0 top-20 h-16 w-[3px] rounded-l bg-white/20" />
                     </div>
                 </div>
             </div>

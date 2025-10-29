@@ -6,11 +6,11 @@ type Item = { q: string; a: string };
 
 const items: Item[] = [
 	{
-		q: "Pourquoi Vyrelio est la meilleure solution marketing dentaire ?",
+		q: "Pourquoi Vyrelio est la meilleure solution web dentaire ?",
 		a: "Nous combinons site ultra‑rapide, SEO local, campagnes payantes et automatisations adaptées aux cabinets français pour générer des patients rentables.",
 	},
 	{
-		q: "Quel budget marketing prévoir pour un cabinet ?",
+		q: "Quel budget prévoir pour un cabinet ?",
 		a: "Selon l’objectif et la zone, nous recommandons un budget modulable. Nous optimisons chaque euro avec un suivi clair des réservations et appels.",
 	},
 	{
@@ -33,7 +33,7 @@ export function Faq() {
 	return (
 		<section id="faq" className="mx-auto max-w-5xl px-4 py-20">
 			<h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900">
-				FAQ marketing dentaire
+				FAQ
 			</h2>
 			<div className="mt-8 divide-y rounded-2xl border bg-white">
 				{items.map((it, idx) => {

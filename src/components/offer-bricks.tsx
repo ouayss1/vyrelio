@@ -29,8 +29,8 @@ export function OfferBricks() {
             <span className="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-emerald-700">RGPD</span>
           </div>
           <div className="mt-6 flex gap-2">
-            <Link href="/pricing" className="inline-flex flex-1 items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-white text-sm font-semibold hover:bg-emerald-700">Détails & prix</Link>
-            <Link href="/#contact" className="inline-flex flex-1 items-center justify-center rounded-full border px-5 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">Parler à un expert</Link>
+            <Link href="/pricing" className="inline-flex flex-1 items-center justify-center rounded-full bg-emerald-600 px-3 py-3 text-white text-sm font-semibold hover:bg-emerald-700">Détails & prix</Link>
+            <Link href="/#contact" className="inline-flex flex-1 items-center justify-center rounded-full border px-2 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-50">Parler à un expert</Link>
           </div>
         </div>
 
@@ -51,8 +51,8 @@ export function OfferBricks() {
             <span className="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-emerald-700">Suivi mensuel</span>
           </div>
           <div className="mt-6 flex gap-2">
-            <Link href="/pricing" className="inline-flex flex-1 items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-white text-sm font-semibold hover:bg-emerald-700">Détails & prix</Link>
-            <Link href="/#contact" className="inline-flex flex-1 items-center justify-center rounded-full border px-5 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">Parler à un expert</Link>
+            <Link href="/pricing" className="inline-flex flex-1 items-center justify-center rounded-full bg-emerald-600 px-3 py-3 text-white text-sm font-semibold hover:bg-emerald-700">Détails & prix</Link>
+            <Link href="/#contact" className="inline-flex flex-1 items-center justify-center rounded-full border px-2 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-50">Parler à un expert</Link>
           </div>
         </div>
 
@@ -73,8 +73,8 @@ export function OfferBricks() {
             <span className="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-emerald-700">+10 h/sem libérées</span>
           </div>
           <div className="mt-6 flex gap-2">
-            <Link href="/pricing" className="inline-flex flex-1 items-center justify-center rounded-full bg-emerald-600 px-5 py-3 text-white text-sm font-semibold hover:bg-emerald-700">Détails & prix</Link>
-            <Link href="/#contact" className="inline-flex flex-1 items-center justify-center rounded-full border px-5 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">Parler à un expert</Link>
+            <Link href="/pricing" className="inline-flex flex-1 items-center justify-center rounded-full bg-emerald-600 px-3 py-3 text-white text-sm font-semibold hover:bg-emerald-700">Détails & prix</Link>
+            <Link href="/#contact" className="inline-flex flex-1 items-center justify-center rounded-full border px-2 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-50">Parler à un expert</Link>
           </div>
         </div>
       </div>
