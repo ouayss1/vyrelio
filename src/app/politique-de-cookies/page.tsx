@@ -14,7 +14,7 @@ export default function Page() {
 
       <section className="mt-6 space-y-2 text-gray-700">
         <p>
-          Ce site utilise des cookies et technologies similaires. Certains sont strictement nécessaires au fonctionnement du site, d'autres
+          Ce site utilise des cookies et technologies similaires. Certains sont strictement nécessaires au fonctionnement du site, d&#39;autres
           (marketing) sont utilisés uniquement avec votre consentement.
         </p>
       </section>
@@ -27,7 +27,7 @@ export default function Page() {
             performance basique. Toujours actifs.
           </li>
           <li>
-            <span className="font-medium text-gray-900">Marketing</span> – activent l'intégration Calendly pour la prise de rendez‑vous
+            <span className="font-medium text-gray-900">Marketing</span> – activent l&#39;intégration Calendly pour la prise de rendez‑vous
             intégrée. Désactivés par défaut, activés uniquement si vous acceptez.
           </li>
         </ul>
@@ -36,15 +36,15 @@ export default function Page() {
       <section className="mt-8 space-y-2 text-gray-700">
         <h2 className="text-xl font-semibold text-gray-900">Tiers utilisés</h2>
         <ul className="list-disc pl-6 space-y-1">
-          <li>Hébergement: Vercel Inc. (ne dépose pas de cookies marketing pour l'affichage du site).</li>
-          <li>Prise de rendez‑vous: Calendly LLC – l'intégration peut déposer des cookies marketing lors de l'affichage du widget.</li>
+          <li>Hébergement: Vercel Inc. (ne dépose pas de cookies marketing pour l&#39;affichage du site).</li>
+          <li>Prise de rendez‑vous: Calendly LLC – l&#39;intégration peut déposer des cookies marketing lors de l&#39;affichage du widget.</li>
         </ul>
       </section>
 
       <section className="mt-8 space-y-2 text-gray-700">
         <h2 className="text-xl font-semibold text-gray-900">Durées de vie</h2>
         <p>
-          Votre préférence de consentement est conservée jusqu'à 6 mois, puis il pourra vous être redemandé. Les cookies tiers ont leurs
+          Votre préférence de consentement est conservée jusqu&#39;à 6 mois, puis il pourra vous être redemandé. Les cookies tiers ont leurs
           propres durées définies par les prestataires.
         </p>
       </section>
@@ -53,7 +53,7 @@ export default function Page() {
         <h2 className="text-xl font-semibold text-gray-900">Gérer vos préférences</h2>
         <p>
           Vous pouvez modifier votre choix à tout moment en supprimant vos cookies dans votre navigateur ou en ré‑acceptant directement via
-          le bandeau si celui‑ci réapparaît. Pour plus d'informations sur vos droits, consultez la
+          le bandeau si celui‑ci réapparaît. Pour plus d&#39;informations sur vos droits, consultez la
           {" "}
           <Link className="text-emerald-700 underline" href="/politique-de-confidentialite">
             Politique de confidentialité
