@@ -1,5 +1,15 @@
+import Image from "next/image";
+
 export function TechMethod() {
-  const tools = [
+  type Tool = {
+    name: string;
+    initials?: string;
+    usage: string;
+    trust: string;
+    href: string;
+    icon?: string;
+  };
+  const tools: Tool[] = [
     {
       name: "Figma",
       initials: "FG",
@@ -70,7 +80,7 @@ export function TechMethod() {
               <div className="flex items-center gap-3">
                 <div className="h-10 w-10 rounded-lg border bg-white flex items-center justify-center">
                   {t.icon ? (
-                    <img src={t.icon as string} alt={t.name} className="h-5 w-5" />
+                    <Image src={t.icon} alt={t.name} width={20} height={20} className="h-5 w-5" />
                   ) : (
                     <span className="text-sm font-bold text-emerald-600">{t.initials}</span>
                   )}
@@ -80,7 +90,7 @@ export function TechMethod() {
               <p className="mt-3 text-sm text-gray-700">{t.usage}</p>
               <p className="mt-1 text-sm text-gray-500">{t.trust}</p>
               <div className="mt-4">
-                <a href={(t as any).href || "#"} className="inline-flex items-center text-sm font-semibold text-gray-900 hover:text-emerald-800">
+                <a href={t.href || "#"} className="inline-flex items-center text-sm font-semibold text-gray-900 hover:text-emerald-800">
                   Découvrir
                   <svg className="ml-1.5" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9 5l7 7-7 7" stroke="#059669" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

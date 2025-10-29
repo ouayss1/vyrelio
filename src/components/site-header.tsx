@@ -5,7 +5,6 @@ import Link from "next/link";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 import { User } from "lucide-react";
-import { CALENDLY_URL } from "@/lib/utils";
 
 export function SiteHeader() {
 	return (

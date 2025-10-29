@@ -15,12 +15,12 @@ import { Differentiation } from "@/components/differentiation";
 import { TechMethod } from "@/components/tech-method";
 
 export const metadata: Metadata = {
-  title: "Agence marketing dentaire | Acquisition patients cabinet dentaire",
+  title: "Agence web dentaire | Acquisition patients cabinet dentaire",
   description:
     "Agence Vyrelio: acquisition de patients pour dentistes (SEO local, site, prise de RDV, automatisations).",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Agence marketing dentaire | Acquisition patients cabinet dentaire",
+    title: "Agence web dentaire | Acquisition patients cabinet dentaire",
     description:
       "Agence Vyrelio: acquisition de patients pour dentistes (SEO local, site, prise de RDV, automatisations).",
     type: "website",

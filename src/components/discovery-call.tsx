@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { StatInsight } from "@/components/stat-insight";
 import { Button } from "@/components/ui/button";
 import Script from "next/script";
-import Image from "next/image";
 import Link from "next/link";
 import { hasMarketingConsent, onConsentChange, writeConsent } from "@/lib/consent";
 
@@ -60,7 +59,7 @@ export function DiscoveryCall() {
               <div style={{ minWidth: 320, width: "100%", height: 680 }} className="flex items-center justify-center p-6">
                 <div className="text-center max-w-sm">
                   <p className="font-semibold text-gray-900">Calendrier indisponible sans cookies marketing</p>
-                  <p className="mt-2 text-sm text-gray-600">Pour afficher le widget Calendly intégré, merci d'accepter les cookies marketing ou ouvrez Calendly dans un nouvel onglet.</p>
+                  <p className="mt-2 text-sm text-gray-600">Pour afficher le widget Calendly intégré, merci d&#39;accepter les cookies marketing ou ouvrez Calendly dans un nouvel onglet.</p>
                   <div className="mt-4 flex items-center justify-center gap-2">
                     <Button onClick={() => writeConsent(true)}>Accepter et afficher</Button>
                     <a className="text-sm text-emerald-700 underline" href="https://calendly.com/zdf6300/30min?hide_event_type_details=1&hide_gdpr_banner=1&text_color=000000&primary_color=2ECA97" target="_blank" rel="noreferrer">Ouvrir Calendly</a>

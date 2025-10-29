@@ -79,7 +79,7 @@ export function CalendlySection({ url = "https://calendly.com/zdf6300/30min?hide
 						<div style={{ minWidth: 320, width: "100%", height: computedHeight }} className="flex items-center justify-center p-6">
 							<div className="text-center max-w-sm">
 								<p className="font-semibold text-gray-900">Calendrier indisponible sans cookies marketing</p>
-								<p className="mt-2 text-sm text-gray-600">Pour afficher le widget Calendly intégré, merci d'accepter les cookies marketing ou ouvrez Calendly dans un nouvel onglet.</p>
+								<p className="mt-2 text-sm text-gray-600">Pour afficher le widget Calendly intégré, merci d&#39;accepter les cookies marketing ou ouvrez Calendly dans un nouvel onglet.</p>
 								<div className="mt-4 flex items-center justify-center gap-2">
 									<Button onClick={() => writeConsent(true)}>Accepter et afficher</Button>
 									<a className="text-sm text-emerald-700 underline" href={url} target="_blank" rel="noreferrer">Ouvrir Calendly</a>
