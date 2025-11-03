@@ -29,7 +29,7 @@ export function AIVoice({ phone = "+33123456789", phoneLabel = "+33 1 23 45 67 8
                     </ul>
                     <div className="mt-8 flex flex-wrap items-center gap-3">
                         <Button className="rounded-full px-6 py-6 text-base" asChild>
-                            <a href={`tel:${phone}`}>Appeler pour tester</a>
+                            <a href="/#contact">Appeler pour tester</a>
                         </Button>
                         <p className="text-sm text-gray-600">Disponible 24/7 au {phoneLabel}</p>
                     </div>
@@ -72,7 +72,7 @@ export function AIVoice({ phone = "+33123456789", phoneLabel = "+33 1 23 45 67 8
                                     ))}
                                 </div>
                                 <div className="mt-4 grid grid-cols-3 gap-4">
-                                    <a href={`tel:${phone}`} className="col-span-3 inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-black font-semibold hover:bg-emerald-400">
+                                    <a href="/#contact" className="col-span-3 inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-black font-semibold hover:bg-emerald-400">
                                         Appeler maintenant
                                     </a>
                                 </div>
