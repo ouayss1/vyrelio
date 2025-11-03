@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 type Props = {
     phone?: string; // tel URI, e.g., "+33123456789"
@@ -7,7 +8,7 @@ type Props = {
 
 export function AIVoice({ phone = "+33123456789", phoneLabel = "+33 1 23 45 67 89" }: Props) {
     return (
-        <section className="bg-emerald-50/60">
+        <section className="bg-emerald-50/60" data-phone={phone}>
             <div className="mx-auto max-w-7xl px-4 py-20 grid gap-10 md:grid-cols-2 items-center">
                 <div>
                     <div className="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-3 py-1 text-emerald-700 text-xs font-semibold">
@@ -29,7 +30,7 @@ export function AIVoice({ phone = "+33123456789", phoneLabel = "+33 1 23 45 67 8
                     </ul>
                     <div className="mt-8 flex flex-wrap items-center gap-3">
                         <Button className="rounded-full px-6 py-6 text-base" asChild>
-                            <a href="/#contact">Appeler pour tester</a>
+                            <Link href="/#contact">Appeler pour tester</Link>
                         </Button>
                         <p className="text-sm text-gray-600">Disponible 24/7 au {phoneLabel}</p>
                     </div>
@@ -72,9 +73,9 @@ export function AIVoice({ phone = "+33123456789", phoneLabel = "+33 1 23 45 67 8
                                     ))}
                                 </div>
                                 <div className="mt-4 grid grid-cols-3 gap-4">
-                                    <a href="/#contact" className="col-span-3 inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-black font-semibold hover:bg-emerald-400">
+                                    <Link href="/#contact" className="col-span-3 inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-black font-semibold hover:bg-emerald-400">
                                         Appeler maintenant
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
