@@ -29,7 +29,7 @@ export default function PricingPage() {
 						<p className="inline-block rounded-full bg-emerald-100 px-3 py-1 text-emerald-700 text-xs font-semibold">Offre principale</p>
 						<h2 className="mt-3 text-3xl font-extrabold text-gray-900">Site haute performance + Mise en place acquisition</h2>
 						<p className="mt-3 text-gray-700">Conception sur‑mesure, SEO local, suivi conversions, tracking appels, pages actes et formation équipe.</p>
-						<p className="mt-6 text-2xl font-extrabold text-gray-900">4 500€ — 10 000€</p>
+						<p className="mt-6 text-2xl font-extrabold text-gray-900">2 500€ — 6 000€</p>
 						<p className="text-sm text-gray-600">Selon taille du projet, nombre de pages et options graphiques.</p>
 						<div className="mt-6">
 							<a href={CALENDLY_URL} className="inline-flex items-center rounded-full bg-emerald-600 px-6 py-3 text-white font-semibold hover:bg-emerald-700">Obtenir mon devis gratuit</a>
