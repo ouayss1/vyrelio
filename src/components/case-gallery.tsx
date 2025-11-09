@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type TabKey = "startup" | "established" | "dso";
 
@@ -135,7 +136,7 @@ export function CaseGallery() {
             </button>
           ))}
         </div>
-        <a href="/#contact" className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium hover:bg-gray-50">Audit gratuit</a>
+        <Link href="/#contact" className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium hover:bg-gray-50">Audit gratuit</Link>
       </div>
 
       {/* Carte active + résumé condensé */}
@@ -178,7 +179,7 @@ export function CaseGallery() {
                 <div className="rounded-xl border bg-white px-4 py-1"><p className="text-2xl font-extrabold text-emerald-700">{active.chiffres3}</p><p className="text-xs text-gray-600">patients Maps</p></div>
               </div>
               <div className="mt-4">
-                <a href="/#contact" className="inline-flex items-center rounded-full border px-6 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">Avoir mon site vyrelio</a>
+                <Link href="/#contact" className="inline-flex items-center rounded-full border px-6 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">Avoir mon site vyrelio</Link>
               </div>
             </div>
           </div>

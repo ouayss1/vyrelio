@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Tarifs | Agence marketing dentaire",
@@ -31,7 +32,7 @@ export default function PricingPage() {
 						<p className="mt-6 text-2xl font-extrabold text-gray-900">2 000€ — 6 000€</p>
 						<p className="text-sm text-gray-600">Selon taille du projet, nombre de pages et options graphiques.</p>
 						<div className="mt-6">
-							<a href="/#contact"className="inline-flex items-center rounded-full bg-emerald-600 px-6 py-3 text-white font-semibold hover:bg-emerald-700">Obtenir mon devis gratuit</a>
+							<Link href="/#contact" className="inline-flex items-center rounded-full bg-emerald-600 px-6 py-3 text-white font-semibold hover:bg-emerald-700">Obtenir mon devis gratuit</Link>
 						</div>
 						<ul className="mt-8 grid sm:grid-cols-2 gap-3 text-sm text-gray-700">
 							<li>• Design system moderne (shadcn/ui)</li>
@@ -63,7 +64,7 @@ export default function PricingPage() {
 							</div>
 						</div>
 						<div className="mt-6">
-							<a href="/#contact" className="inline-flex items-center rounded-full border px-6 py-3 font-semibold hover:bg-gray-50">Parler à un expert</a>
+							<Link href="/#contact" className="inline-flex items-center rounded-full border px-6 py-3 font-semibold hover:bg-gray-50">Parler à un expert</Link>
 						</div>
 					</div>
 				</div>
@@ -84,7 +85,7 @@ export default function PricingPage() {
 							<p>✓ Dashboard basique</p>
 							<p>✓ Support e‑mail</p>
 						</div>
-						<a href="/#contact" className="mt-6 inline-flex items-center justify-center rounded-full border px-5 py-3 font-semibold hover:bg-gray-50">Demander une démo</a>
+						<Link href="/#contact" className="mt-6 inline-flex items-center justify-center rounded-full border px-5 py-3 font-semibold hover:bg-gray-50">Demander une démo</Link>
 					</div>
 
 					{/* Elevate */}
@@ -96,7 +97,7 @@ export default function PricingPage() {
 							<p>✓ Suivi ROI appels & formulaires</p>
 							<p>✓ Création 1 contenu/mois</p>
 						</div>
-						<a href="/#contact" className="mt-6 inline-flex items-center justify-center rounded-full border px-5 py-3 font-semibold hover:bg-gray-50">Demander une démo</a>
+						<Link href="/#contact" className="mt-6 inline-flex items-center justify-center rounded-full border px-5 py-3 font-semibold hover:bg-gray-50">Demander une démo</Link>
 					</div>
 
 					{/* Populaire */}
@@ -109,7 +110,7 @@ export default function PricingPage() {
 							<p>✓ Reporting ROI & objectifs</p>
 							<p>✓ 2 contenus/mois + optimisation SEO</p>
 						</div>
-						<a href="/#contact" className="mt-6 inline-flex items-center justify-center rounded-full bg-white px-5 py-3 font-semibold text-emerald-700 hover:bg-emerald-50">Demander une démo</a>
+						<Link href="/#contact" className="mt-6 inline-flex items-center justify-center rounded-full bg-white px-5 py-3 font-semibold text-emerald-700 hover:bg-emerald-50">Demander une démo</Link>
 					</div>
 
 					{/* Influence */}
@@ -121,7 +122,7 @@ export default function PricingPage() {
 							<p>✓ Gestion avis & e‑réputation</p>
 							<p>✓ Priorité support & succès client</p>
 						</div>
-						<a href="/#contact" className="mt-6 inline-flex items-center justify-center rounded-full border px-5 py-3 font-semibold hover:bg-gray-50">Demander une démo</a>
+						<Link href="/#contact" className="mt-6 inline-flex items-center justify-center rounded-full border px-5 py-3 font-semibold hover:bg-gray-50">Demander une démo</Link>
 					</div>
 				</div>
 
