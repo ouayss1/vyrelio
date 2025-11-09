@@ -3,7 +3,6 @@
 import { useState, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { CALENDLY_URL } from "@/lib/utils";
 
 type TabKey = "startup" | "established" | "dso";
 
@@ -39,7 +38,7 @@ const CASES: CaseItem[] = [
     result:
       "Agenda rempli progressivement, flux d’appels mieux réparti et no‑show en baisse.",
     chiffres: ["-30%"],
-    chiffres2: ["+40%"],
+    chiffres2: ["10h"],
     chiffres3: ["Top 3"],
 
   },
@@ -59,15 +58,15 @@ const CASES: CaseItem[] = [
     ],
     result:
       "Trafic qualifié en hausse et plus de RDV en ligne depuis les pages actes.",
-    chiffres: ["+68%"],
-    chiffres2: ["+34%"],
-    chiffres3: ["+20%"],
+    chiffres: ["-28%"],
+    chiffres2: ["6h"],
+    chiffres3: ["4.8/5"],
   },
   {
     id: 3,
     title: "Dentora",
     segment: "dso",
-    metrics: ["+210 avis", "4.9/5"],
+    metrics: ["+43 avis", "4.9/5"],
     thumb: "/edc-dentora.webp",
     problem:
       "Peu d’avis récents et disparités entre cliniques, freinant la confiance.",
@@ -79,9 +78,9 @@ const CASES: CaseItem[] = [
     ],
     result:
       "Volume et note moyenne en hausse, réputation et visibilité locale renforcées.",
-    chiffres: ["+210"],
-    chiffres2: ["4.9/5"],
-    chiffres3: ["+20%"],
+    chiffres: ["-21%"],
+    chiffres2: ["9h"],
+    chiffres3: ["+19"],
   },
   {
     id: 4,
@@ -99,9 +98,9 @@ const CASES: CaseItem[] = [
     ],
     result:
       "Cohérence de marque, sites plus rapides et meilleurs taux de conversion.",
-    chiffres: ["24"],
-    chiffres2: ["0.8s"],
-    chiffres3: ["+20%"],
+    chiffres: ["-24%"],
+    chiffres2: ["11h"],
+    chiffres3: ["4.6/5"],
   },
 ];
 
@@ -136,7 +135,7 @@ export function CaseGallery() {
             </button>
           ))}
         </div>
-        <a href={CALENDLY_URL} className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium hover:bg-gray-50">Audit gratuit</a>
+        <a href="/#contact" className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium hover:bg-gray-50">Audit gratuit</a>
       </div>
 
       {/* Carte active + résumé condensé */}
@@ -146,10 +145,10 @@ export function CaseGallery() {
             <div>
               <h3 className="text-2xl font-semibold text-gray-900">{active.title}</h3>
               {active.title === "Courtine" && (
-                <p className="mt-1 text-xs text-gray-500">Mesuré sur 8 semaines.</p>
+                <p className="mt-1 text-xs text-gray-500">Mesuré sur 1 ans.</p>
               )}
               {active.title === "Glow Dent" && (
-                <p className="mt-1 text-xs text-gray-500">Mesuré sur 8 semaines.</p>
+                <p className="mt-1 text-xs text-gray-500">Mesuré sur 1 ans.</p>
               )}
               {active.title === "Dentora" && (
                 <p className="mt-1 text-xs text-gray-500">Note vérifiée via Google Reviews.</p>
@@ -175,11 +174,11 @@ export function CaseGallery() {
               </div>
               <div className="mt-4 flex gap-2">
                 <div className="rounded-xl border bg-white px-4 py-1"><p className="text-2xl font-extrabold text-emerald-700">{active.chiffres}</p><p className="text-xs text-gray-600">no‑show</p></div>
-                <div className="rounded-xl border bg-white px-4 py-1"><p className="text-2xl font-extrabold text-emerald-700">{active.chiffres2}</p><p className="text-xs text-gray-600">appels qualifiés</p></div>
+                <div className="rounded-xl border bg-white px-4 py-1"><p className="text-2xl font-extrabold text-emerald-700">{active.chiffres2}</p><p className="text-xs text-gray-600">gagner par semaine</p></div>
                 <div className="rounded-xl border bg-white px-4 py-1"><p className="text-2xl font-extrabold text-emerald-700">{active.chiffres3}</p><p className="text-xs text-gray-600">patients Maps</p></div>
               </div>
               <div className="mt-4">
-                <a href="#cases" className="inline-flex items-center rounded-full border px-6 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">Avoir mon site vyrelio</a>
+                <a href="/#contact" className="inline-flex items-center rounded-full border px-6 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50">Avoir mon site vyrelio</a>
               </div>
             </div>
           </div>

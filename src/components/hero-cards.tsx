@@ -24,12 +24,12 @@ export function TrafficCard({ className }: CardProps) {
 					<p>13 k visiteurs</p>
 				</div>
 				<div>
-					<p className="font-semibold text-gray-800">Google Ads</p>
-					<p>1,4 k visiteurs</p>
+					<p className="font-semibold text-gray-800">Avis google</p>
+					<p>4.7/5 étoiles</p>
 				</div>
 				<div>
-					<p className="font-semibold text-gray-800">Meta Ads</p>
-					<p>1,0 k visiteurs</p>
+					<p className="font-semibold text-gray-800">Réputation</p>
+					<p>9/10</p>
 				</div>
 			</div>
 		</motion.div>

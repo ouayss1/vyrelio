@@ -61,8 +61,8 @@ export function OfferBricks() {
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 8h12" stroke="#059669" strokeWidth="2" strokeLinecap="round"/><path d="M6 12h8" stroke="#059669" strokeWidth="2" strokeLinecap="round"/><rect x="4" y="4" width="16" height="16" rx="3" stroke="#059669" strokeWidth="2"/></svg>
           </div>
           <p className="mt-3 text-xs font-semibold text-emerald-700">Brique 3</p>
-          <h3 className="mt-1 text-xl font-semibold text-gray-900">Automations</h3>
-          <p className="mt-2 text-sm text-gray-700">Rappels, relances, formulaires intelligents, e‑signature, CRM leads et transferts voix.</p>
+          <h3 className="mt-1 text-xl font-semibold text-gray-900">IA réceptionniste</h3>
+          <p className="mt-2 text-sm text-gray-700">Rappels, relances, formulaires intelligents, filtres, transferts voix.</p>
           <ul className="mt-4 space-y-2 text-sm text-gray-700">
             <li className="flex items-center gap-2"><span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-bold">✓</span> Rappels SMS/e‑mail + replanification</li>
             <li className="flex items-center gap-2"><span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-bold">✓</span> Parcours patients automatisés</li>
