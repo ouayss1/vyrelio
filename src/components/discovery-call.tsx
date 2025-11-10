@@ -29,7 +29,7 @@ export function DiscoveryCall() {
           <div className="mt-4 max-w-xl">
             <StatInsight
               title="Sources"
-              text="77 % veulent réserver en ligne; un rendez‑vous manqué/jour coûte jusqu’à 70 000 $/an; les rappels réduisent les absences de 78 %."
+              text="En moyenne un cabinet gagne entre 8 à 12 patient par mois avec une bonne présence en ligne"
               sourceLinks={[
                 { label: "ADA", href: "https://www.ada.org/resources/research/health-policy-institute" },
                 { label: "Dental Economics", href: "https://www.dentaleconomics.com/" },
